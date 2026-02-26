@@ -23,12 +23,11 @@ function App() {
       }
     });
 
-    console.log(res.data.access_token);
+    axios.defaults.headers.common["Authorization"] = `Bearer ${res.data.access_token}`;
   }
 
   return (
     <>
-      <h1>SpotifyClone</h1>
       <SearchBar />
     </>
   )
