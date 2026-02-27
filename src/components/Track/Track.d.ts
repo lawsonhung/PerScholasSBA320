@@ -3,6 +3,7 @@ declare module "TrackType" {
     id: string
     name: string;
     artists: Artist[];
+    duration_ms: number;
   }
 
   interface Artist {
