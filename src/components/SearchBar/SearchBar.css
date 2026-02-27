@@ -2,5 +2,7 @@ form {
   width: 100%;
   display: flex;
   height: fit-content;
-  padding: 1em 1em 0 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
