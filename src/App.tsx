@@ -1,9 +1,13 @@
 import axios from 'axios';
 import './App.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import SearchBar from './components/SearchBar/SearchBar';
+import type { TrackType } from 'TrackType';
+import TrackItem from './components/Track/Track.js';
 
 function App() {
+
+  const [tracks, setTracks] = useState<Array<TrackType> | null>(null);
 
   useEffect(() => {
     getAccessToken();
@@ -28,7 +32,15 @@ function App() {
 
   return (
     <>
-      <SearchBar />
+      <SearchBar setTracks={setTracks} />
+      <ul>{tracks?.map(track => {
+        return (
+          <TrackItem
+          key={track.id}
+           track={track} 
+           />
+        )
+      })}</ul>
     </>
   )
 }

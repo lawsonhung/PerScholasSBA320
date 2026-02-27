@@ -1,5 +1,5 @@
-# Per Scholas SBA 320 - Artist Search
-An app to search for artists
+# Per Scholas SBA 320 - Track Search
+An app to search for songs/tracks
 Using Typescript, Axios, Material UI
 
 ## How to Run
