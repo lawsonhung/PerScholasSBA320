@@ -1,4 +1,5 @@
 import type { TrackType } from "TrackType";
+import "./Track.css";
 
 interface TrackProps {
   track: TrackType,
@@ -16,10 +17,10 @@ const Track = ({ track }: TrackProps) => {
   }
 
   return (
-    <>
+    <li className="track">
       <h1>{track.name}</h1>
       <p>{track.artists[0].name} | {getTime()}</p>
-    </>
+    </li>
   )
 }
 

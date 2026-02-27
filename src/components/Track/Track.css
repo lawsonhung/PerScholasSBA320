@@ -1,0 +1,8 @@
+.track {
+  border-top: 1px solid #ccc;
+  list-style: none;
+}
+
+.track:first-child {
+  border-top: none;
+}

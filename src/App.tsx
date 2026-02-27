@@ -36,9 +36,9 @@ function App() {
       <ul>{tracks?.map(track => {
         return (
           <TrackItem
-          key={track.id}
-           track={track} 
-           />
+            key={track.id}
+            track={track}
+          />
         )
       })}</ul>
     </>
